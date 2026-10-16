@@ -1,19 +1,17 @@
 # Azeroth Survivors — Windows downloads
 
-[Download the small game update](https://github.com/ahmedalqamzi/azeroth-survivors-downloads/releases/download/quality-2026-10-15/AzerothSurvivors-UI-Patch.zip)
+[Download the latest game update](https://github.com/ahmedalqamzi/azeroth-survivors-downloads/releases/download/quality-2026-10-15/AzerothSurvivors-UI-Patch.zip?v=eb2b2b5)
 
-Close the game. Extract the update into the folder containing `warcraft-survivors.exe` and replace its five files. Keep your existing Data and saves; no large data download is needed.
+Close the game. Extract the update's five files into the folder containing `warcraft-survivors.exe` and replace those files. Keep your Data and saves; no large data download is needed.
 
-[Fresh installation](https://github.com/ahmedalqamzi/azeroth-survivors-downloads/releases/download/quality-2026-10-15/AzerothSurvivors-Setup-Windows-UI.zip): extract the setup ZIP and run `Setup.bat`. Setup automatically downloads and verifies three large parts, extracts the game, applies the latest patch and opens its folder. Allow about 20 GB free disk space. Launch with `Play Azeroth Survivors.bat`.
+[Fresh installation](https://github.com/ahmedalqamzi/azeroth-survivors-downloads/releases/download/quality-2026-10-15/AzerothSurvivors-Setup-Windows-UI.zip?v=eb2b2b5): extract the setup ZIP and run `Setup.bat`. Setup downloads and verifies the original three large parts, applies the latest game patch and opens its folder. Allow about 20 GB free disk space.
 
-The update removes class resource budgets, adds WoW-style mouse controls, fixes Druid Dash, improves tooltips/cards, slows enemies, scales them with player level and adds tougher 120-enemy swarms every five minutes. All party members need this protocol 6 build.
+The update adds compact horizontal reward choices, gentler spell growth, smaller area attacks and accurate damage previews. It includes the earlier resource-free classes, slower larger crowds, five-minute swarms, level scaling, WoW-style controls, Druid sprint and item hover fixes.
 
-Up to three players: party in the lobby before the host starts. The prototype supports internet relay; the host must stay connected and players cannot rejoin mid-run.
+[See spell choices](https://raw.githubusercontent.com/ahmedalqamzi/azeroth-survivors-downloads/main/previews/spell-cards-v2.png) · [See jewellery choices](https://raw.githubusercontent.com/ahmedalqamzi/azeroth-survivors-downloads/main/previews/jewellery-cards-v2.png)
 
-[Release notes and SHA256 hashes](https://github.com/ahmedalqamzi/azeroth-survivors-downloads/releases/tag/quality-2026-10-15)
+Up to three players over internet relay. All players should install this protocol 6 update and party in the lobby before the host starts. Mid-run rejoining is unsupported; keep the host connected.
 
-This repository distributes packaged downloads only; it contains no game source. The original three game/data parts remain unchanged.
+[Release notes and checksums](https://github.com/ahmedalqamzi/azeroth-survivors-downloads/releases/tag/quality-2026-10-15)
 
-Latest adjustment: normal mobs and swarms move slower again (50-55% authored speed; maximum 55% base hero speed before temporary effects). Large crowds and five-minute waves stay in place.
-
-Party DPS names omit the host designation. Actual UI captures: [spell cards](https://raw.githubusercontent.com/ahmedalqamzi/azeroth-survivors-downloads/main/previews/spell-cards.png), [jewellery cards](https://raw.githubusercontent.com/ahmedalqamzi/azeroth-survivors-downloads/main/previews/jewellery-cards.png).
+Downloads only; no game source is published here. The original three game/data parts are unchanged.
