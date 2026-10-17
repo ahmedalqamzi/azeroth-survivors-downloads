@@ -1,14 +1,22 @@
-# Azeroth Survivors — Windows launcher and boss rewards update
+# Azeroth Survivors — Co-op fixes and camera controls
 
-[Download the complete Windows setup](https://github.com/ahmedalqamzi/azeroth-survivors-downloads/releases/download/quality-2026-10-15/AzerothSurvivors-Setup-Windows.zip?v=35f94dc-combat)
+[Download the complete Windows setup](https://github.com/ahmedalqamzi/azeroth-survivors-downloads/releases/download/quality-2026-10-15/AzerothSurvivors-Setup-Windows.zip?v=f858f64-combat)
 
-[Download the small Windows launcher](https://github.com/ahmedalqamzi/azeroth-survivors-downloads/releases/download/quality-2026-10-15/AzerothSurvivors-Launcher-Windows.zip?v=35f94dc-combat) — extract it, open Azeroth Survivors Launcher.bat, choose your game folder, then click Install if needed and Launch when ready. It resumes interrupted Data downloads and updates existing games when opened. Installation and updates never launch the game automatically.
+[Download the small Windows launcher](https://github.com/ahmedalqamzi/azeroth-survivors-downloads/releases/download/quality-2026-10-15/AzerothSurvivors-Launcher-Windows.zip?v=f858f64-combat) — extract it, open Azeroth Survivors Launcher.bat, choose your game folder, then click Install if needed and Launch when ready. It resumes interrupted Data downloads and updates existing games when opened. Installation and updates never launch the game automatically.
 
 One cumulative package includes the game and all previously shipped updates. No separate patches are required. Extract the ZIP, close the game, run Setup.bat, and select your existing game folder. Existing Data and saves are retained. Fresh installations automatically download and verify the original Data files (about 5.5 GB).
 
 ## Launcher fix
 
-Fixed the Windows PowerShell status-file replacement crash. The launcher reads current update metadata through GitHub to avoid stale download hashes. Installer rollback uses an explicit backup path compatible with Windows PowerShell. The observational Check action completes; installer and gameplay execution remain deferred.
+Fixed the Windows PowerShell status-file replacement crash. The launcher reads current update metadata through GitHub to avoid stale download hashes. Installer rollback uses an explicit backup path compatible with Windows PowerShell.
+
+## Co-op and control fixes
+
+- Three-player enemy health is reduced by 20% compared with the previous release. Other party sizes retain their current health scaling.
+- Consecration and self-centred ground spells check every nearby enemy before casting; a distant priority boss no longer blocks casting against nearby adds. Ground areas can overlap and retain independent lifetimes.
+- Removed the hidden 35-yard distance clamp around the host. Players can move independently within the region and dungeon walls.
+- Stand inside a fallen party member's visible revive circle for four seconds to bring them back. Revive progress is shared with the party.
+- Settings offer WoW and Megabonk camera controls, remembered between sessions.
 
 ## Combat changes
 
@@ -27,6 +35,6 @@ Fixed the Windows PowerShell status-file replacement crash. The launcher reads c
 
 All existing content and four-player co-op remain included. The Deadmines and Molten Core are the current indoor Survivors adaptations. Ragefire Chasm, Wailing Caverns, Shadowfang Keep and Blackfathom Deeps remain in development and are not included in this balance release. Windows only.
 
-Native Windows compilation completed. Gameplay testing and installer execution remain deferred at the user's request; this is not a claim of verified balance or full instance clears. All party members must use this updated package. Protocol 10.
+Native Windows compilation completed. Gameplay testing and installer execution remain deferred at the user's request; this is not a claim of verified balance or full instance clears. All party members must use this updated package. Protocol 11.
 
-Build revision: `35f94dc303ce84dc6faff4341178f8efc22bd34b`. Executable SHA-256: `2B15D1F6FC03D675CDA651C428E0192B8E32FB40951276C1696183F690AF31EB`.
+Build revision: `f858f64ad84f500bb8cb63c0d1cce9f286c075f2`. Executable SHA-256: `65053AFD02D7CD4770DD8A9E1D7FFDE7A81110492A4EC85FE0FF4B10CD12C95B`.
