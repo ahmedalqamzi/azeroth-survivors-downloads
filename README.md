@@ -2,11 +2,13 @@
 
 **Windows update. Dungeon and raid full-clear verification remains unfinished.**
 
-[Download the latest game update](https://github.com/ahmedalqamzi/azeroth-survivors-downloads/releases/download/quality-2026-10-15/AzerothSurvivors-UI-Patch.zip?v=0f0e571)
+[Download the complete Windows setup](https://github.com/ahmedalqamzi/azeroth-survivors-downloads/releases/download/quality-2026-10-15/AzerothSurvivors-Setup-Windows.zip?v=0f0e571-unified2)
 
-Close the game. Extract the update's five files into the folder containing `warcraft-survivors.exe`, replacing those files. Keep Data and saves; no large Data download is needed.
+**One download and one setup. The current game and all existing updates are already included.**
 
-[Fresh installation](https://github.com/ahmedalqamzi/azeroth-survivors-downloads/releases/download/quality-2026-10-15/AzerothSurvivors-Setup-Windows-UI.zip?v=0f0e571): extract the setup ZIP and run `Setup.bat`. It downloads and verifies the original three game/data parts, applies the latest patch and opens its folder. Allow about 20 GB free disk space.
+Extract the ZIP, close the game, and run `Setup.bat`. If you already have the game, choose its existing folder to keep using the same saves. Setup creates an **Azeroth Survivors** desktop shortcut.
+
+Existing Data is reused. On a fresh installation, setup automatically downloads, verifies and joins the original Data files (about 5.5 GB); you do not need to download or assemble parts yourself. Keep about 20 GB free. No separate gameplay patch is required.
 
 Up to **four players over internet relay**. Everyone needs this **protocol 9** update. Choose each hero and loadout, join the party, and confirm Ready. The host starts after everyone is ready. Changing destination, difficulty or membership clears confirmations. During a run, everyone shares XP and pauses for independent reward choices, with a 20-second fallback. Mid-run joining/rejoining remains unsupported.
 
@@ -28,7 +30,7 @@ Earlier relay checks used two physical machines on one network; separate-home ne
 
 Windows is the current download target. No Mac or iPhone release is included.
 
-Final Windows revision: 0f0e571. Executable SHA256: 8EF6610A0C21B469D4A23F218B314242AE8FEFED0D0A5F0386243F992277E89F. Package SHA256: 0BA9855247F9CA54809546D1FE5CA647925322D3CE952E1E4DA3DCDB8969FB0D.
+Final Windows revision: 0f0e571. Executable SHA256: 8EF6610A0C21B469D4A23F218B314242AE8FEFED0D0A5F0386243F992277E89F. Complete setup SHA256: E0B75B6B807BD2BAC9D3B3A263CB5631D93EA49235BE31D746D990FC50202008.
 
 [Release notes and checksums](https://github.com/ahmedalqamzi/azeroth-survivors-downloads/releases/tag/quality-2026-10-15)
 
