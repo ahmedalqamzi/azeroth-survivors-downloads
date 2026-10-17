@@ -1,55 +1,27 @@
-# Azeroth Survivors — Friends controls and opening pressure
+# Azeroth Survivors — Current Aethus reward replacement
 
-[Download the complete Windows setup](https://github.com/ahmedalqamzi/azeroth-survivors-downloads/releases/download/quality-2026-10-15/AzerothSurvivors-Setup-Windows.zip?v=e343d41-combat)
+[Download the complete Windows setup](https://github.com/ahmedalqamzi/azeroth-survivors-downloads/releases/download/quality-2026-10-15/AzerothSurvivors-Setup-Windows.zip?v=41e1bc3-combat) · [Download the launcher](https://github.com/ahmedalqamzi/azeroth-survivors-downloads/releases/download/quality-2026-10-15/AzerothSurvivors-Launcher-Windows.zip?v=41e1bc3-combat)
 
-[Download the small Windows launcher](https://github.com/ahmedalqamzi/azeroth-survivors-downloads/releases/download/quality-2026-10-15/AzerothSurvivors-Launcher-Windows.zip?v=e343d41-combat) — extract it and open Azeroth Survivors Launcher.bat. Choose the game folder, install if missing, and click Launch when ready. Existing launcher users can close the game and click Refresh for this single cumulative update. Data downloads resume; existing Data and saves are retained. Fresh installs download and verify the original Data (about 5.5 GB).
+Existing players: close the game, open your launcher and click Refresh. After the update finishes, click Launch. One cumulative update; no separate patches. Existing Data and account saves are retained. Fresh installs download and verify the original Data, about 5.5 GB.
 
-## Friends controls and gameplay fixes
+- Current Aethus spell and jewellery catalogues replace the previous run rewards, including selected upgrade axes, mixed-quality duplicate scaling and spell-specific relic effects. Portrait cards use large icons, rarity frames, focused effects and mouse or 1/2/3 selection.
+- Blessings are removed from offers and stat calculation.
+- Run XP payouts are 6x the previous published rate, including solo, co-op and dungeon room rewards.
+- Ordinary enemies have lower HP and spawn faster from all sides. Bosses and elites retain separate health budgets. Enemy movement stays slow; pressure comes from numbers.
+- Chests and power-ups are less frequent, with at most three ground power-ups.
+- Living connected guests can collect buffs and treasure, use world interactions and buy from merchants. Shared reward offers retain individual selections and the 20-second fallback.
+- Permanent armour and weapons go directly into the account bag. They do not create a selection screen or equip during the run; equip them afterwards.
+- All four authoritative player movement paths collide with loaded tree, rock and building collision hulls, with sliding and airborne clearance. Decorative models without usable hulls remain passable.
+- Bosses and rares have separate named red health bars beneath the timer.
+- Paid rerolls cost 100 gold, then 300, 900 and so on, after free uses. Co-op uses the shared purse with owner and revision checks.
+- New graphics defaults use 8x anisotropic filtering. Existing explicit settings are respected. This does not establish that Aethus uses a different model pack.
 
-- Open Multiplayer → Friends / Invite. Separate Friends, Requests, Add friend and My profile tabs replace the shared text buffer. Code and name inputs have independent focus, paste and selection. UI presses are accepted when their interaction arrives after the raw mouse edge; holding a button cannot submit repeatedly.
-- Invite to party creates a room when solo and sends as soon as its connection is ready. Recipients choose Join party. Multiple pending invitations are retained while connecting, up to the three guest seats.
-- Slow solo openings receive extra earned wisp XP while below level 5 and behind the 30-second-per-level marks. Healthy openings, parties, dungeons and later progression keep their existing XP. Waiting alone awards nothing.
-- Outdoor packs use alternating interception lanes and more forward refills. Periodic rings lean into the movement heading, while spawn safety distance, crowd-control rules and normal movement speeds remain intact. Bodies spread farther apart. This requires playtesting for final balance.
-- Jewellery drafts now guarantee a useful option with partial loadouts too: fill an empty seat or upgrade an equipped identity. Exact physical drops and saturated effects retain their existing rules.
-- Lingering Whirlwind ticks retain the fully scaled cast radius, including Spell Area, matching the main hit.
+This includes the previous five dungeon adaptations (Ragefire Chasm, Wailing Caverns, Shadowfang Keep, Blackfathom Deeps, The Deadmines), Molten Core, shared Keys and lobby contributions, persistent friends/invites, revive circles, camera modes, automatic Druid forms and batch scrapping. Windows only.
 
-## Four included dungeons
+The port follows recovered current-client data and the supplied screenshots. Some special-spell runtime and visual edge cases remain documented adaptations; this is not a byte-for-byte recreation.
 
-- Ragefire Chasm: levels 3–18.
-- Wailing Caverns: levels 17–24.
-- Shadowfang Keep: levels 22–30.
-- Blackfathom Deeps: levels 24–32.
+Native Windows build completed; 114 focused regression tests passed. Native card captures use an isolated account. Full combat clears, installer execution and a physical multi-computer party session were not run for this update. These checks do not establish final balance.
 
-These join The Deadmines and Molten Core: five dungeons and one raid, playable solo or with up to four players. The new instances use the original indoor maps, ordered boss altars, encounter rosters, corridor waves and boss loot pools. Jump with Space; swim up with Space and dive with Ctrl. Stair support and airborne landing now consistently use the character's capsule footprint, with bounded movement substeps.
+All party members must update together: protocol 13.
 
-## Shared Keys and lobby contributions
-
-- The wallet is called Keys. Existing Dungeon Keys and Raid Keys merge once into that wallet without loss.
-- A dungeon costs 2 Keys total; a raid costs 4 Keys total, regardless of party size.
-- Each player chooses their own contribution in the lobby. Zero is valid, one person may pay everything, and the total must exactly match the required amount before Ready/Start.
-- Changing contributions resets readiness. Each account reserves only its own share; a cancelled entry refunds that share once. Entering gameplay commits the payment.
-
-## Persistent friends and invitations
-
-Open Friends, share a stable friend code once, and accept the request. Accepted contacts are saved separately from progression. While both apps are open, the list shows live presence and hosts can send party invitations; recipients accept directly into the guarded lobby without pasting a new room link. Pending requests, removal, display names and expiring invitations are supported. Room links remain available as a fallback.
-
-## Co-op, UI and performance
-
-- Stand inside a fallen teammate's visible revive circle for four seconds. Progress is shared with the party.
-- Consecration and other self-centred ground spells consider nearby enemies even when a distant boss has targeting priority; ground areas may overlap.
-- The previous three-player enemy HP reduction of 20% is retained. The host-distance tether remains removed; map walls still apply.
-- WoW and Megabonk camera controls are selectable in Settings and remembered.
-- Reward cards show their quality clearly, with neutral stat text. Jewellery comparisons include the equipped item's effect.
-- Blessings and neutral abilities come from boss rewards alongside equipment, keeping class level-up offers focused. Genuine XP-only bosses also grant their blessing choice; the duplicate Shredder shell does not grant duplicate treasure.
-- All living party members can collect eligible treasure; corpses cannot.
-- Enemy targeting lists are built only when a caster needs them and reused within that caster's frame. Camera turns no longer rebuild the world-object membership index on every ray. These are work reductions, not a measured FPS claim.
-
-The cumulative package retains stronger bosses, slow enemies and larger swarms, corridor waves, altar summons, automatic combat-driven Druid forms, resource-free classes, batch scrapping, collections and the graphical Windows installer/updater. The launcher checks for updates when opened or refreshed and only starts the game when Launch is clicked.
-
-## Verification
-
-The native Windows build completed. 52 focused regression checks passed for Friends controls, party entry points, social state, opening XP, enemy movement, Warrior abilities and jewellery offers. The previous public-relay proof and 56 dungeon route traversals remain applicable; those unchanged systems were not rerun for this hotfix.
-
-Full native combat clears, installer execution and physical multi-computer Friends UI sessions were not run. Friends panel screenshots use an isolated account and actual native rendering. These checks do not establish final balance. All party members must update together; protocol 12. Windows only.
-
-Build revision: `e343d419fdefeae334d47ac08236c75c6f3156f2`. Executable SHA-256: `CA4827950A88922A9BF86B6BFDFAAB903B686AAAC9BC1A0EC39AC41DE900173E`.
+Build `41e1bc34613f5f0b898896d07350b0fdf1288da3`. Executable SHA-256: `E59D521D3A8A73F022EFD01C6235A6AA702E085CC8D732466132AE53F1B67443`.
