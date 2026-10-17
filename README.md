@@ -2,7 +2,7 @@
 
 **Windows update. Dungeon and raid full-clear verification remains unfinished.**
 
-[Download the complete Windows setup](https://github.com/ahmedalqamzi/azeroth-survivors-downloads/releases/download/quality-2026-10-15/AzerothSurvivors-Setup-Windows.zip?v=0f0e571-unified2)
+[Download the complete Windows setup](https://github.com/ahmedalqamzi/azeroth-survivors-downloads/releases/download/quality-2026-10-15/AzerothSurvivors-Setup-Windows.zip?v=0f0e571-unified3)
 
 **One download and one setup. The current game and all existing updates are already included.**
 
@@ -30,7 +30,7 @@ Earlier relay checks used two physical machines on one network; separate-home ne
 
 Windows is the current download target. No Mac or iPhone release is included.
 
-Final Windows revision: 0f0e571. Executable SHA256: 8EF6610A0C21B469D4A23F218B314242AE8FEFED0D0A5F0386243F992277E89F. Complete setup SHA256: E0B75B6B807BD2BAC9D3B3A263CB5631D93EA49235BE31D746D990FC50202008.
+Final Windows revision: 0f0e571. Executable SHA256: 8EF6610A0C21B469D4A23F218B314242AE8FEFED0D0A5F0386243F992277E89F. Complete setup SHA256: 57D6F09460777532F7CD9E565F793E6494A83E8F5480B55118F156BC12147A9A.
 
 [Release notes and checksums](https://github.com/ahmedalqamzi/azeroth-survivors-downloads/releases/tag/quality-2026-10-15)
 
