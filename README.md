@@ -1,37 +1,26 @@
-# Azeroth Survivors — Windows downloads
+# Azeroth Survivors — Windows combat balance update
 
-**Windows update. Dungeon and raid full-clear verification remains unfinished.**
+[Download the complete Windows setup](https://github.com/ahmedalqamzi/azeroth-survivors-downloads/releases/download/quality-2026-10-15/AzerothSurvivors-Setup-Windows.zip?v=3283af7-combat)
 
-[Download the complete Windows setup](https://github.com/ahmedalqamzi/azeroth-survivors-downloads/releases/download/quality-2026-10-15/AzerothSurvivors-Setup-Windows.zip?v=0f0e571-unified3)
+[Download the small Windows launcher](https://github.com/ahmedalqamzi/azeroth-survivors-downloads/releases/download/quality-2026-10-15/AzerothSurvivors-Launcher-Windows.zip?v=3283af7-combat) — extract it into the folder where you want the game, then open Azeroth Survivors Launcher.bat. It downloads the game/Data if missing, resumes interrupted Data downloads and checks for updates every time it opens.
 
-**One download and one setup. The current game and all existing updates are already included.**
+One cumulative package includes the game and all previously shipped updates. No separate patches are required. Extract the ZIP, close the game, run Setup.bat, and select your existing game folder. Existing Data and saves are retained. Fresh installations automatically download and verify the original Data files (about 5.5 GB).
 
-Extract the ZIP, close the game, and run `Setup.bat`. If you already have the game, choose its existing folder to keep using the same saves. Setup creates an **Azeroth Survivors** desktop shortcut.
+## Combat changes
 
-Existing Data is reused. On a fresh installation, setup automatically downloads, verifies and joins the original Data files (about 5.5 GB); you do not need to download or assemble parts yourself. Keep about 20 GB free. No separate gameplay patch is required.
+- Defeat the earlier zone bosses before summoning the final altar. A final-boss kill alone cannot skip the other encounters or grant a clear.
+- Early altar summons retain their scheduled health, damage and level. Summoning does not advance the shared run clock. There is no minimum run timer.
+- Outdoor enemies have 50% more baseline health and 15% more damage on Normal. The ordinary health floor also increases 50%, making floor-limited opening enemies 2.25 times as durable as the previous build.
+- Movement speeds remain slow; difficulty still scales above this new Normal baseline.
+- Deadmines boss health increases sixfold; Sneed rises from 2,600 to 15,600 base HP. Molten Core boss health increases twelvefold. Both receive higher contact-damage budgets.
+- Dungeon trash has a separate HP floor that rises with room progress. Waves and recurring larger swarms continue along the passage until the next boss encounter begins. Survivors remain part of that room's clear requirement.
+- Dungeon bosses require activating their current altar with T. Corridor waves continue until activation, and all encounters remain ordered. In co-op the host validates each player's altar interaction.
+- Druid forms follow successful Feral combat abilities automatically; Dash sprints without flipping the persistent form. Form bonuses retain a separate cooldown.
+- The Windows launcher checks for published updates when opened, installs missing game files and reuses existing Data and saves.
+- The Armory now has visible Select items, Select all visible and Scrap selected (N) controls with one confirmation for the batch. Equipped gear is excluded.
 
-Up to **four players over internet relay**. Everyone needs this **protocol 9** update. Choose each hero and loadout, join the party, and confirm Ready. The host starts after everyone is ready. Changing destination, difficulty or membership clears confirmations. During a run, everyone shares XP and pauses for independent reward choices, with a 20-second fallback. Mid-run joining/rejoining remains unsupported.
+All existing content and four-player co-op remain included. The Deadmines and Molten Core are the current indoor Survivors adaptations. Ragefire Chasm, Wailing Caverns, Shadowfang Keep and Blackfathom Deeps remain in development and are not included in this balance release. Windows only.
 
-**The Deadmines and Molten Core are experimental dungeon and raid instances.** They use the original indoor maps, ordered encounters and corresponding boss equipment pools. Deadmines has eight phases; Molten Core has ten bosses. These are Survivors adaptations and do not reproduce every original MMO mechanic. Other Classic dungeons and raids are not implemented. The original 16 outdoor destinations remain Open World arenas, including the outdoor Plaguewood/Naxxramas arena.
+Native Windows compilation completed. Gameplay testing and installer execution remain deferred at the user's request; this is not a claim of verified balance or full instance clears. All party members must use this updated package. Protocol 10.
 
-Solo entry costs two Dungeon Keys or four Raid Keys. Parties pay one matching key per player from their own saves. The run waits for everyone to load. Cancellation before gameplay refunds reserved keys; started runs remain spent after a wipe. Full clear credit requires every encounter and required add in order. Boss pressure follows encounter progress, so walking and reading rewards cannot inflate boss health indefinitely.
-
-Ragnaros has a required Sons of Flame intermission. His loot appears on the reachable shore. Selected equipment for another class goes into that class's account collection without granting stats to the current character.
-
-Indoor bosses now have dedicated health and contact-damage budgets instead of stacked outdoor boss scaling. Instance kills avoid the outdoor XP age penalty, and each newly cleared reward encounter grants XP through the ordinary shared level-up system. Difficulty, party scaling and individual reward choices still apply. These instance adjustments do not change the outdoor combat curves.
-
-Reward cards use spell/item artwork and individually locked choices. Item and talent tooltip numbers use consistent cream text; rarity stays on names and borders, and negative comparisons stay red. Shared jewellery choices resolve inventory icons and avoid the duplicate solo panel.
-
-Earlier fixes remain included: the shared Ready lobby, resource-free classes, slower crowds, character-level enemy scaling, five-minute swarms, WoW-style controls, compact reward choices and readable equipment hovers.
-
-**Validation is unfinished.** Further testing was stopped at the user's request. Earlier runs reached five of eight Deadmines phases and six of ten Molten Core bosses, without a complete instance clear. The new instance tuning has not completed native full-clear validation. Final-boss rewards and complete instance runs remain unverified.
-
-Earlier relay checks used two physical machines on one network; separate-home networks remain untested. Some content probes used explicitly synthetic progressed accounts. Those partial probes do not establish complete content, organically earned progression or fresh-account balance.
-
-Windows is the current download target. No Mac or iPhone release is included.
-
-Final Windows revision: 0f0e571. Executable SHA256: 8EF6610A0C21B469D4A23F218B314242AE8FEFED0D0A5F0386243F992277E89F. Complete setup SHA256: 57D6F09460777532F7CD9E565F793E6494A83E8F5480B55118F156BC12147A9A.
-
-[Release notes and checksums](https://github.com/ahmedalqamzi/azeroth-survivors-downloads/releases/tag/quality-2026-10-15)
-
-Downloads only; no game source is published here. The original three game/data parts are unchanged.
+Build revision: `3283af79f7302bc5b3fcb68e9542cdc758dfb7b0`. Executable SHA-256: `63EBD25048AC6D6D1B8AA82EBB74A941EC0DE78737DAEED919D844D24F079316`.
