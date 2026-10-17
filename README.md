@@ -1,16 +1,17 @@
-# Azeroth Survivors — Faster mobs, tougher rares and scaled spell effects
+# Azeroth Survivors — Co-op XP and pack damage
 
-[Download the complete Windows setup](https://github.com/ahmedalqamzi/azeroth-survivors-downloads/releases/download/quality-2026-10-15/AzerothSurvivors-Setup-Windows.zip?v=714ecb4-combat) · [Download the launcher](https://github.com/ahmedalqamzi/azeroth-survivors-downloads/releases/download/quality-2026-10-15/AzerothSurvivors-Launcher-Windows.zip?v=714ecb4-combat)
+[Download the complete Windows setup](https://github.com/ahmedalqamzi/azeroth-survivors-downloads/releases/download/quality-2026-10-15/AzerothSurvivors-Setup-Windows.zip?v=984a376-combat) · [Download the launcher](https://github.com/ahmedalqamzi/azeroth-survivors-downloads/releases/download/quality-2026-10-15/AzerothSurvivors-Launcher-Windows.zip?v=984a376-combat)
 
 Existing players: close the game, open your launcher and click Refresh. After the update finishes, click Launch. One cumulative update; no separate patches. Existing Data and account saves are retained. Fresh installs download and verify the original Data, about 5.5 GB.
 
+- Ordinary and elite melee hits deal 20% less raw damage. Each player has an independent 0.25-second grace window between those hits, including shield absorption. Boss and rare contact, spells and ground hazards bypass this adjustment.
 - Normal mobs now use 80-90% of authored speed, capped at 80% of base player speed (5.6 yards/sec), instead of the previous 50-55%/55% cap.
 - Named rares preserve their original level, difficulty and party scaling. They have 8x their undiscounted spawn health and 2x spawned damage, instead of replacing their stats with an unscaled early-wave budget.
 - Every cache gives one jewellery pickup. Duplicate independent item rolls from kills, paid chests and challenges are removed. Overflowing Coffer ranks now grant a free reroll chance instead of a second item.
 - Spell visual size follows the scaled cast/ground area on host and guests. This includes the replicated cast scale; all party members must update.
 - Current Aethus spell and jewellery catalogues replace the previous run rewards, including selected upgrade axes, mixed-quality duplicate scaling and spell-specific relic effects. Portrait cards use large icons, rarity frames, focused effects and mouse or 1/2/3 selection.
 - Blessings are removed from offers and stat calculation.
-- Run XP payouts are 6x the previous published rate, including solo, co-op and dungeon room rewards.
+- Solo XP remains at its existing 6x rate. Co-op shares that payout across the registered party: half per pickup in duos, one third in trios and one quarter with four players, including room rewards.
 - Ordinary enemies have lower HP and spawn faster from all sides. Bosses and elites retain separate health budgets. Movement has been increased as described above; pressure still comes from numbers.
 - Chests and power-ups are less frequent, with at most three ground power-ups.
 - Living connected guests can collect buffs and treasure, use world interactions and buy from merchants. Shared reward offers retain individual selections and the 20-second fallback.
@@ -24,8 +25,8 @@ This includes the previous five dungeon adaptations (Ragefire Chasm, Wailing Cav
 
 The port follows recovered current-client data and the supplied screenshots. Some special-spell runtime and visual edge cases remain documented adaptations; this is not a byte-for-byte recreation.
 
-Native Windows build completed; 136 focused regression tests passed. Native visual checks use an isolated account. Full combat clears, installer execution and a physical multi-computer party session were not run for this update. These checks do not establish final balance.
+Native Windows build completed; 139 focused regression tests passed. This update was checked with automated regressions; no new native visual session was run. Full combat clears, installer execution and a physical multi-computer party session were not run for this update. These checks do not establish final balance.
 
 All party members must update together: protocol 14.
 
-Build `714ecb4b09a73283bf97c9d929658c516db23ba8`. Executable SHA-256: `3BDDFA89EA2BFA0E01E27E1F3230EC98CBA4BFD6B1E14E8EE8B8AD5F099611C2`.
+Build `984a376686eb687d60c2e95d8006bec67717433d`. Executable SHA-256: `3FBF8F6199A14E065FA5153348E5A7B401A1B657C9569E711A758A1F48D83460`.
