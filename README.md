@@ -1,40 +1,46 @@
-# Azeroth Survivors — Co-op fixes and camera controls
+# Azeroth Survivors — Dungeons, Keys and friends
 
-[Download the complete Windows setup](https://github.com/ahmedalqamzi/azeroth-survivors-downloads/releases/download/quality-2026-10-15/AzerothSurvivors-Setup-Windows.zip?v=f858f64-combat)
+[Download the complete Windows setup](https://github.com/ahmedalqamzi/azeroth-survivors-downloads/releases/download/quality-2026-10-15/AzerothSurvivors-Setup-Windows.zip?v=4b06334-combat)
 
-[Download the small Windows launcher](https://github.com/ahmedalqamzi/azeroth-survivors-downloads/releases/download/quality-2026-10-15/AzerothSurvivors-Launcher-Windows.zip?v=f858f64-combat) — extract it, open Azeroth Survivors Launcher.bat, choose your game folder, then click Install if needed and Launch when ready. It resumes interrupted Data downloads and updates existing games when opened. Installation and updates never launch the game automatically.
+[Download the small Windows launcher](https://github.com/ahmedalqamzi/azeroth-survivors-downloads/releases/download/quality-2026-10-15/AzerothSurvivors-Launcher-Windows.zip?v=4b06334-combat) — extract it and open Azeroth Survivors Launcher.bat. Choose the game folder, install if missing, and click Launch when ready. Existing launcher users can close the game and click Refresh for this single cumulative update. Data downloads resume; existing Data and saves are retained. Fresh installs download and verify the original Data (about 5.5 GB).
 
-One cumulative package includes the game and all previously shipped updates. No separate patches are required. Extract the ZIP, close the game, run Setup.bat, and select your existing game folder. Existing Data and saves are retained. Fresh installations automatically download and verify the original Data files (about 5.5 GB).
+## Four added dungeons
 
-## Launcher fix
+- Ragefire Chasm: levels 3–18.
+- Wailing Caverns: levels 17–24.
+- Shadowfang Keep: levels 22–30.
+- Blackfathom Deeps: levels 24–32.
 
-Fixed the Windows PowerShell status-file replacement crash. The launcher reads current update metadata through GitHub to avoid stale download hashes. Installer rollback uses an explicit backup path compatible with Windows PowerShell.
+These join The Deadmines and Molten Core: five dungeons and one raid, playable solo or with up to four players. The new instances use the original indoor maps, ordered boss altars, encounter rosters, corridor waves and boss loot pools. Jump with Space; swim up with Space and dive with Ctrl. Stair support and airborne landing now consistently use the character's capsule footprint, with bounded movement substeps.
 
-## Co-op and control fixes
+## Shared Keys and lobby contributions
 
-- Three-player enemy health is reduced by 20% compared with the previous release. Other party sizes retain their current health scaling.
-- Consecration and self-centred ground spells check every nearby enemy before casting; a distant priority boss no longer blocks casting against nearby adds. Ground areas can overlap and retain independent lifetimes.
-- Removed the hidden 35-yard distance clamp around the host. Players can move independently within the region and dungeon walls.
-- Stand inside a fallen party member's visible revive circle for four seconds to bring them back. Revive progress is shared with the party.
-- Settings offer WoW and Megabonk camera controls, remembered between sessions.
+- The wallet is called Keys. Existing Dungeon Keys and Raid Keys merge once into that wallet without loss.
+- A dungeon costs 2 Keys total; a raid costs 4 Keys total, regardless of party size.
+- Each player chooses their own contribution in the lobby. Zero is valid, one person may pay everything, and the total must exactly match the required amount before Ready/Start.
+- Changing contributions resets readiness. Each account reserves only its own share; a cancelled entry refunds that share once. Entering gameplay commits the payment.
 
-## Combat changes
+## Persistent friends and invitations
 
-- Defeat the earlier zone bosses before summoning the final altar. A final-boss kill alone cannot skip the other encounters or grant a clear.
-- Early altar summons retain their scheduled health, damage and level. Summoning does not advance the shared run clock. There is no minimum run timer.
-- Outdoor enemies have 50% more baseline health and 15% more damage on Normal. The ordinary health floor also increases 50%, making floor-limited opening enemies 2.25 times as durable as the previous build.
-- Movement speeds remain slow; difficulty still scales above this new Normal baseline.
-- Deadmines boss health increases sixfold; Sneed rises from 2,600 to 15,600 base HP. Molten Core boss health increases twelvefold. Both receive higher contact-damage budgets.
-- Dungeon trash has a separate HP floor that rises with room progress. Waves and recurring larger swarms continue along the passage until the next boss encounter begins. Survivors remain part of that room's clear requirement.
-- Dungeon bosses require activating their current altar with T. Corridor waves continue until activation, and all encounters remain ordered. In co-op the host validates each player's altar interaction.
-- Druid forms follow successful Feral combat abilities automatically; Dash sprints without flipping the persistent form. Form bonuses retain a separate cooldown.
-- The Windows launcher checks for published updates when opened, installs missing game files and reuses existing Data and saves.
-- The launcher now has a native desktop window with folder selection, installation/download progress and an explicit Launch button. Existing installations update automatically; installation and updates never start the game themselves.
-- The Armory now has visible Select items, Select all visible and Scrap selected (N) controls with one confirmation for the batch. Equipped gear is excluded.
-- Normal level-up offers focus on class abilities and their upgrades. Blessings and neutral upgrades are separate boss rewards alongside equipment and treasure, with independent party choices.
+Open Friends, share a stable friend code once, and accept the request. Accepted contacts are saved separately from progression. While both apps are open, the list shows live presence and hosts can send party invitations; recipients accept directly into the guarded lobby without pasting a new room link. Pending requests, removal, display names and expiring invitations are supported. Room links remain available as a fallback.
 
-All existing content and four-player co-op remain included. The Deadmines and Molten Core are the current indoor Survivors adaptations. Ragefire Chasm, Wailing Caverns, Shadowfang Keep and Blackfathom Deeps remain in development and are not included in this balance release. Windows only.
+## Co-op, UI and performance
 
-Native Windows compilation completed. Gameplay testing and installer execution remain deferred at the user's request; this is not a claim of verified balance or full instance clears. All party members must use this updated package. Protocol 11.
+- Stand inside a fallen teammate's visible revive circle for four seconds. Progress is shared with the party.
+- Consecration and other self-centred ground spells consider nearby enemies even when a distant boss has targeting priority; ground areas may overlap.
+- The previous three-player enemy HP reduction of 20% is retained. The host-distance tether remains removed; map walls still apply.
+- WoW and Megabonk camera controls are selectable in Settings and remembered.
+- Reward cards show their quality clearly, with neutral stat text. Jewellery comparisons include the equipped item's effect.
+- Blessings and neutral abilities come from boss rewards alongside equipment, keeping class level-up offers focused. Genuine XP-only bosses also grant their blessing choice; the duplicate Shredder shell does not grant duplicate treasure.
+- All living party members can collect eligible treasure; corpses cannot.
+- Enemy targeting lists are built only when a caster needs them and reused within that caster's frame. Camera turns no longer rebuild the world-object membership index on every ray. These are work reductions, not a measured FPS claim.
 
-Build revision: `f858f64ad84f500bb8cb63c0d1cce9f286c075f2`. Executable SHA-256: `65053AFD02D7CD4770DD8A9E1D7FFDE7A81110492A4EC85FE0FF4B10CD12C95B`.
+The cumulative package retains stronger bosses, slow enemies and larger swarms, corridor waves, altar summons, automatic combat-driven Druid forms, resource-free classes, batch scrapping, collections and the graphical Windows installer/updater. The launcher checks for updates when opened or refreshed and only starts the game when Launch is clicked.
+
+## Verification
+
+The native Windows build completed. 53 focused checks passed, covering Keys migration and entry refunds, lobby readiness, friends state and encrypted identity, revival, cards, chest rewards, camera controls and instance registration. This includes a live public-relay test with two simultaneous guests. All 28 added dungeon sections passed physical traversal at two frame cadences: 56 traversals using normal movement, jumps and swimming.
+
+Full native combat clears, installer execution and physical multi-computer Friends UI sessions were not run. These checks do not establish final balance. All party members must update together; protocol 12. Windows only.
+
+Build revision: `4b06334b930979549b7a6f620173cfdccb929700`. Executable SHA-256: `A22877AA11141BFBB41F17AF9A380A3304593C5D8E859387FD9D38188B03A356`.
