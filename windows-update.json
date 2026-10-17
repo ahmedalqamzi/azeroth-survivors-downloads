@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
-  "revision": "3283af79f7302bc5b3fcb68e9542cdc758dfb7b0",
+  "revision": "c269c0684bb91fb67c23e9d2b374b7fdf87e8557",
   "protocol": 10,
-  "setup_url": "https://github.com/ahmedalqamzi/azeroth-survivors-downloads/releases/download/quality-2026-10-15/AzerothSurvivors-Setup-Windows.zip?v=3283af79f7302bc5b3fcb68e9542cdc758dfb7b0",
-  "setup_sha256": "5CEC6E41B480538366D794C8F040C2693E6EDF57747035FC299445D210914E31",
-  "setup_bytes": 52057608,
-  "executable_sha256": "63EBD25048AC6D6D1B8AA82EBB74A941EC0DE78737DAEED919D844D24F079316",
-  "published_at": "2026-10-17T15:37:08.977647+00:00"
+  "setup_url": "https://github.com/ahmedalqamzi/azeroth-survivors-downloads/releases/download/quality-2026-10-15/AzerothSurvivors-Setup-Windows.zip?v=c269c0684bb91fb67c23e9d2b374b7fdf87e8557",
+  "setup_sha256": "F1948EDCDF6E1B5EBB3327524D3A64914E727DE96CF907BAAA0D0F7C9A1687F2",
+  "setup_bytes": 52064746,
+  "executable_sha256": "54AF6C2BE449052C67B0A446D592BF775BB0C02FC6BB2B0988DDC8450442ACFB",
+  "published_at": "2026-10-17T15:51:42.773483+00:00"
 }
