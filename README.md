@@ -1,10 +1,14 @@
 # Azeroth Survivors — Windows launcher and boss rewards update
 
-[Download the complete Windows setup](https://github.com/ahmedalqamzi/azeroth-survivors-downloads/releases/download/quality-2026-10-15/AzerothSurvivors-Setup-Windows.zip?v=c269c06-combat)
+[Download the complete Windows setup](https://github.com/ahmedalqamzi/azeroth-survivors-downloads/releases/download/quality-2026-10-15/AzerothSurvivors-Setup-Windows.zip?v=c0474dd-combat)
 
-[Download the small Windows launcher](https://github.com/ahmedalqamzi/azeroth-survivors-downloads/releases/download/quality-2026-10-15/AzerothSurvivors-Launcher-Windows.zip?v=c269c06-combat) — extract it, open Azeroth Survivors Launcher.bat, choose your game folder, then click Install if needed and Launch when ready. It resumes interrupted Data downloads and updates existing games when opened. Installation and updates never launch the game automatically.
+[Download the small Windows launcher](https://github.com/ahmedalqamzi/azeroth-survivors-downloads/releases/download/quality-2026-10-15/AzerothSurvivors-Launcher-Windows.zip?v=c0474dd-combat) — extract it, open Azeroth Survivors Launcher.bat, choose your game folder, then click Install if needed and Launch when ready. It resumes interrupted Data downloads and updates existing games when opened. Installation and updates never launch the game automatically.
 
 One cumulative package includes the game and all previously shipped updates. No separate patches are required. Extract the ZIP, close the game, run Setup.bat, and select your existing game folder. Existing Data and saves are retained. Fresh installations automatically download and verify the original Data files (about 5.5 GB).
+
+## Launcher fix
+
+Fixed a Windows PowerShell status-file replacement failure that stopped the update worker after its first progress message. The observational worker check now completes and offers Install for a missing game. Installer rollback uses the same compatible replacement method. No installer or gameplay execution was performed.
 
 ## Combat changes
 
@@ -25,4 +29,4 @@ All existing content and four-player co-op remain included. The Deadmines and Mo
 
 Native Windows compilation completed. Gameplay testing and installer execution remain deferred at the user's request; this is not a claim of verified balance or full instance clears. All party members must use this updated package. Protocol 10.
 
-Build revision: `c269c0684bb91fb67c23e9d2b374b7fdf87e8557`. Executable SHA-256: `54AF6C2BE449052C67B0A446D592BF775BB0C02FC6BB2B0988DDC8450442ACFB`.
+Build revision: `c0474dd9203507b422b0fe202619bad5ec316698`. Executable SHA-256: `9CCB227E721E7121C88FCB23227749C2A9DE0E020B42137CD798490221A60D38`.
