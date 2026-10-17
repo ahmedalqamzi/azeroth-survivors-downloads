@@ -1,10 +1,19 @@
-# Azeroth Survivors — Dungeons, Keys and friends
+# Azeroth Survivors — Friends controls and opening pressure
 
-[Download the complete Windows setup](https://github.com/ahmedalqamzi/azeroth-survivors-downloads/releases/download/quality-2026-10-15/AzerothSurvivors-Setup-Windows.zip?v=4b06334-combat)
+[Download the complete Windows setup](https://github.com/ahmedalqamzi/azeroth-survivors-downloads/releases/download/quality-2026-10-15/AzerothSurvivors-Setup-Windows.zip?v=e343d41-combat)
 
-[Download the small Windows launcher](https://github.com/ahmedalqamzi/azeroth-survivors-downloads/releases/download/quality-2026-10-15/AzerothSurvivors-Launcher-Windows.zip?v=4b06334-combat) — extract it and open Azeroth Survivors Launcher.bat. Choose the game folder, install if missing, and click Launch when ready. Existing launcher users can close the game and click Refresh for this single cumulative update. Data downloads resume; existing Data and saves are retained. Fresh installs download and verify the original Data (about 5.5 GB).
+[Download the small Windows launcher](https://github.com/ahmedalqamzi/azeroth-survivors-downloads/releases/download/quality-2026-10-15/AzerothSurvivors-Launcher-Windows.zip?v=e343d41-combat) — extract it and open Azeroth Survivors Launcher.bat. Choose the game folder, install if missing, and click Launch when ready. Existing launcher users can close the game and click Refresh for this single cumulative update. Data downloads resume; existing Data and saves are retained. Fresh installs download and verify the original Data (about 5.5 GB).
 
-## Four added dungeons
+## Friends controls and gameplay fixes
+
+- Open Multiplayer → Friends / Invite. Separate Friends, Requests, Add friend and My profile tabs replace the shared text buffer. Code and name inputs have independent focus, paste and selection. UI presses are accepted when their interaction arrives after the raw mouse edge; holding a button cannot submit repeatedly.
+- Invite to party creates a room when solo and sends as soon as its connection is ready. Recipients choose Join party. Multiple pending invitations are retained while connecting, up to the three guest seats.
+- Slow solo openings receive extra earned wisp XP while below level 5 and behind the 30-second-per-level marks. Healthy openings, parties, dungeons and later progression keep their existing XP. Waiting alone awards nothing.
+- Outdoor packs use alternating interception lanes and more forward refills. Periodic rings lean into the movement heading, while spawn safety distance, crowd-control rules and normal movement speeds remain intact. Bodies spread farther apart. This requires playtesting for final balance.
+- Jewellery drafts now guarantee a useful option with partial loadouts too: fill an empty seat or upgrade an equipped identity. Exact physical drops and saturated effects retain their existing rules.
+- Lingering Whirlwind ticks retain the fully scaled cast radius, including Spell Area, matching the main hit.
+
+## Four included dungeons
 
 - Ragefire Chasm: levels 3–18.
 - Wailing Caverns: levels 17–24.
@@ -39,8 +48,8 @@ The cumulative package retains stronger bosses, slow enemies and larger swarms, 
 
 ## Verification
 
-The native Windows build completed. 53 focused checks passed, covering Keys migration and entry refunds, lobby readiness, friends state and encrypted identity, revival, cards, chest rewards, camera controls and instance registration. This includes a live public-relay test with two simultaneous guests. All 28 added dungeon sections passed physical traversal at two frame cadences: 56 traversals using normal movement, jumps and swimming.
+The native Windows build completed. 52 focused regression checks passed for Friends controls, party entry points, social state, opening XP, enemy movement, Warrior abilities and jewellery offers. The previous public-relay proof and 56 dungeon route traversals remain applicable; those unchanged systems were not rerun for this hotfix.
 
-Full native combat clears, installer execution and physical multi-computer Friends UI sessions were not run. These checks do not establish final balance. All party members must update together; protocol 12. Windows only.
+Full native combat clears, installer execution and physical multi-computer Friends UI sessions were not run. Friends panel screenshots use an isolated account and actual native rendering. These checks do not establish final balance. All party members must update together; protocol 12. Windows only.
 
-Build revision: `4b06334b930979549b7a6f620173cfdccb929700`. Executable SHA-256: `A22877AA11141BFBB41F17AF9A380A3304593C5D8E859387FD9D38188B03A356`.
+Build revision: `e343d419fdefeae334d47ac08236c75c6f3156f2`. Executable SHA-256: `CA4827950A88922A9BF86B6BFDFAAB903B686AAAC9BC1A0EC39AC41DE900173E`.
